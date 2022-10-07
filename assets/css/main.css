@@ -19,7 +19,7 @@
 /* Colors */
 :root {
   --color-default: #fafafa;
-  --color-primary: #ef7604;
+  --color-primary: rgba(255, 132, 43, 0.8);
   --color-secondary: #161718;
 }
 
@@ -43,7 +43,7 @@ a {
 }
 
 a:hover {
-  color: #ef7604;
+  color: rgba(255, 132, 43, 0.8);
   text-decoration: none;
 }
 
@@ -74,15 +74,16 @@ h6 {
   color: rgba(255, 255, 255, 0.6);
   font-family: var(--font-primary);
 }
+
 .section-header h2::after {
   content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #ef7604;
+  background: rgba(255, 132, 43, 0.8);
   margin: 4px 10px;
 }
-*/
+
 .section-header p {
   margin: 0;
   margin: 0;
@@ -133,7 +134,7 @@ h6 {
 }
 
 .page-header .cta-btn:hover {
-  background: #ef7604;
+  background: rgba(255, 132, 43, 0.8);
 }
 
 /*--------------------------------------------------------------
@@ -160,7 +161,7 @@ h6 {
 }
 
 .scroll-top:hover {
-  background: #ef7604;
+  background: rgba(255, 132, 43, 0.8);
   color: #fff;
 }
 
@@ -222,12 +223,10 @@ h6 {
 }
 
 #preloader .line:after {
-
   content: "";
-
   position: absolute;
   background-color: #999;
-  left:  0;
+  left: 0;
   top: 0;
   width: 1px;
   height: 100%;
@@ -327,8 +326,7 @@ h6 {
   transition: 0.3s;
 }
 
-.header .logo 
- {
+.header .logo img {
   max-height: 40px;
   margin-right: 8px;
 }
@@ -811,9 +809,8 @@ h6 {
 --------------------------------------------------------------*/
 .gallery-single .portfolio-details-slider img {
   width: 100%;
- 
 
-}
+   }
 
 .gallery-single .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
@@ -851,7 +848,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-@media (max-width: 450px) {
+@media (max-width: 575px) {
 
   .gallery-single .swiper-button-prev,
   .gallery-single .swiper-button-next {
@@ -897,7 +894,6 @@ h6 {
   color: #6b7075;
   font-size: 14px;
 }
-
 .gallery-single .portfolio-info .btn-visit {
   padding: 8px 40px;
   background: var(--color-primary);
@@ -905,9 +901,12 @@ h6 {
   border-radius: 50px;
   transition: 0.3s;
 }
-
+.test {
+  width: 400px;
+  height: 500px;
+}
 .gallery-single .portfolio-info .btn-visit:hover {
-  background: #ef7604;
+  background: rgba(255, 132, 43, 0.8);
 }
 
 .gallery-single .portfolio-description h2 {
@@ -953,7 +952,7 @@ h6 {
 
 .gallery-single .portfolio-description .testimonial-item .quote-icon-left,
 .gallery-single .portfolio-description .testimonial-item .quote-icon-right {
-  color: #ef7604;
+  color: rgba(255, 132, 43, 0.8);
   font-size: 26px;
   line-height: 0;
 }
@@ -978,6 +977,71 @@ h6 {
   padding: 0;
 }
 
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+
+
+.services .service-item i {
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 24px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.services .service-item h4 {
+  font-weight: 600;
+  margin: 15px 0 0 0;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.services .service-item h4 a {
+  color: #fff;
+}
+
+.services .service-item p {
+  line-height: 24px;
+  font-size: 14px;
+  margin: 15px 0 0 0;
+}
+
+
+
+.services .service-item:hover h4 a,
+.services .service-item:hover p {
+  color: #fff;
+}
+
+.services .service-item:hover i {
+  background: #fff;
+  color: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Pricing Section
+--------------------------------------------------------------*/
+
+
+
+
+.pricing .pricing-item h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.pricing .pricing-item h4 {
+  margin: 0;
+  font-size: 16px;
+}
 
 /*--------------------------------------------------------------
 # Contact Section
@@ -1032,7 +1096,7 @@ h6 {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #186953;
+  background: #717c36;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1100,7 +1164,7 @@ h6 {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #ef7604;
+  background: rgba(255, 132, 43, 0.8);
 }
 
 @-webkit-keyframes animate-loading {
@@ -1182,7 +1246,7 @@ h6 {
 }
 
 .hero .btn-get-started:hover {
-  background: #ef7604;
+  background: rgba(255, 132, 43, 0.8);
 }
 
 @media (max-width: 768px) {
